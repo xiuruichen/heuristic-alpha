@@ -1,0 +1,6 @@
+.env
+pmenv/
+__pycache__/
+*.csv
+*.log
+Desktop.ini
