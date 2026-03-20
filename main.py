@@ -104,7 +104,6 @@ async def main() -> None:
     display_df['Alpha %'] = display_df['Alpha %'].apply(lambda x: f"{x:.2%}")
     #display_df['Epistemic Entropy'] = display_df['Epistemic Entropy'].apply(lambda x: f"{x:.3f}")
     #display_df['Knightian Kelly'] = display_df['Knightian Kelly'].apply(lambda x: f"{x:.2%}")
-    display_df['Market Name'] = display_df['Market Name'].apply(lambda x: (x[:35] + '...') if isinstance(x, str) and len(x) > 38 else x)
     
     table = tabulate(display_df, headers='keys', tablefmt='simple', showindex=False)
     print(table)
